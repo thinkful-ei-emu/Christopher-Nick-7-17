@@ -33,7 +33,11 @@ app.get('/frequency', (req, res) => {
   let highestVal = 0;
   
   Object.keys(counts).forEach(k => {
-    if(counts[k] > highestVal) {
+    if(counts[k] === highestVal && k < highest){
+      highestVal = counts[k];
+      highest = k;
+    }
+    else if(counts[k] > highestVal) {
       highestVal = counts[k];
       highest = k;
     }

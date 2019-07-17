@@ -18,4 +18,4 @@ describe('GET /frequency', () => {
   });
 
   it('should throw an error');
-});
+}); 
