@@ -42,4 +42,4 @@ server.get('/apps', (req, res) => {
 
 });
 
-server.listen(8080, () => console.log('Server on 8080 is running'))
+module.exports = server;

@@ -7,13 +7,16 @@
     "morgan": "^1.9.1"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js",
-    "start": "node index.js",
-    "debug": "ndb index.js"
+    "test": "mocha",
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "debug": "ndb server.js"
   },
   "keywords": [],
   "author": "",
